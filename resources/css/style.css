@@ -9,6 +9,7 @@ html {
 
 body {
   font-family: Helvetica, sans-serif;
+  line-height: 1.4;
 }
 
 /* shared styles */
@@ -19,16 +20,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+}
+
+.container:nth-child(2n+0) {
+  background-color: lightgrey;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 /* header styles */
 
 header{
+  max-width: 960px;
+  height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -46,4 +63,36 @@ header{
 li {
   margin-left: 16px;
   display: inline-block;
+}
+
+/* banner styles */
+
+.banner {
+  width: 60%;
+  margin-right: 24px;
+  overflow: hidden;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-info {
+  width: 35%;
+}
+
+.button {
+  max-width: 100%;
+  padding: 8px 0;
+  margin-top: 24px;
+  text-align: center;
+  background-color: grey;
+  display: block;
+  border-radius: 4px;
+}
+
+.button a{
+  color: white;
 }

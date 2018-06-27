@@ -15,12 +15,11 @@ body {
 /* shared styles */
 
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   padding: 32px 24px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  /* margin: 0 auto; */
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .container:nth-child(2n+0) {
@@ -29,7 +28,7 @@ body {
 
 h1 {
   display: block;
-  font-size: 2em;
+  font-size: 2.2em;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
   margin-left: 0;
@@ -38,10 +37,25 @@ h1 {
   line-height: 1.2;
 }
 
+h2 {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
 /* header styles */
 
 header{
-  max-width: 960px;
+  max-width: 1200px;
   height: 64px;
   display: flex;
   justify-content: space-between;
@@ -69,7 +83,7 @@ li {
 
 .banner {
   width: 60%;
-  margin-right: 24px;
+  margin-right: 40px;
   overflow: hidden;
 }
 
@@ -79,8 +93,12 @@ li {
   display: block;
 }
 
-.main-info {
-  width: 35%;
+.banner-info {
+  width: 40%;
+}
+
+.banner-info h1 {
+  margin-right: 48px;
 }
 
 .button {
@@ -91,8 +109,75 @@ li {
   background-color: grey;
   display: block;
   border-radius: 4px;
+  margin-right: 48px;
 }
 
 .button a{
   color: white;
+}
+
+/* main info section styles */
+
+.media-text {
+  width: 60%;
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.media-text img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.media-text span {
+  font-size: 0.8rem;
+  margin-top: 24px;
+  display: block;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  height: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0 16px 0;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  /* border: solid 1px lightgrey; */
+  /* margin-right: -24px; */
+}
+
+.item:first-child {
+  padding-top: 0px;
+  border-top: none;
+}
+
+.item img {
+  max-width: 35%;
+  height: auto;
+  display: block;
+  margin-right: 16px;
+}
+
+.info {
+  width: 65%;
+}
+
+.info p {
+  margin: 8px 0px;
+}
+
+.info a {
+  color: blue
 }

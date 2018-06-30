@@ -15,6 +15,7 @@ body {
 /* shared styles */
 
 .container {
+  min-width: 960px;
   max-width: 1200px;
   padding: 32px 24px;
   display: flex;
@@ -29,7 +30,6 @@ body {
 h1 {
   display: block;
   font-size: 2.2em;
-  margin-top: 0.67em;
   margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
@@ -52,9 +52,17 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  display: block;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 /* header styles */
 
 header{
+  min-width: 960px;
   max-width: 1200px;
   height: 64px;
   display: flex;
@@ -81,6 +89,11 @@ li {
 
 /* banner styles */
 
+.top.container {
+  display: flex;
+  align-items: center;
+}
+
 .banner {
   width: 60%;
   margin-right: 40px;
@@ -101,9 +114,12 @@ li {
   margin-right: 48px;
 }
 
+.banner-info p {
+  margin-right: 48px;
+}
+
 .button {
   max-width: 100%;
-  padding: 8px 0;
   margin-top: 24px;
   text-align: center;
   background-color: grey;
@@ -114,6 +130,8 @@ li {
 
 .button a{
   color: white;
+  display: block;
+  padding: 8px 0;
 }
 
 /* main info section styles */
@@ -150,17 +168,19 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 0 16px 0;
+  padding: 16px 0 16px 16px;
   max-width: 100%;
   height: auto;
   overflow: hidden;
-  /* border: solid 1px lightgrey; */
-  /* margin-right: -24px; */
 }
 
 .item:first-child {
   padding-top: 0px;
   border-top: none;
+}
+
+.item:last-child {
+  background-color: lightgrey;
 }
 
 .item img {
@@ -180,4 +200,41 @@ li {
 
 .info a {
   color: blue
+}
+
+/* courses section styles */
+
+.container.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.subject {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin:16px 16px 32px 16px;
+}
+
+.subject img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info {
+  padding: 16px 0 24px 16px;
+  flex: 1;
 }

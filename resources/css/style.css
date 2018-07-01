@@ -10,17 +10,21 @@ html {
 body {
   font-family: Helvetica, sans-serif;
   line-height: 1.4;
+  background-color: grey;
+  margin: 0 auto;
 }
 
 /* shared styles */
 
 .container {
-  min-width: 960px;
+  /* min-width: 960px; */
   max-width: 1200px;
+  margin: 0 auto;
   padding: 32px 24px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  background-color: white;
 }
 
 .container:nth-child(2n+0) {
@@ -66,14 +70,15 @@ p {
 /* header styles */
 
 header{
-  min-width: 960px;
   max-width: 1200px;
+  margin:0 auto;
   height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 24px;
   padding-right: 24px;
+  background-color: white;
 }
 
 .logo {
@@ -286,6 +291,8 @@ footer {
   padding: 16px 24px;
   border-top: 1px solid lightgrey;
   max-width: 1200px;
+  background-color: white;
+  margin: 0 auto;
 }
 
 .copyright p {

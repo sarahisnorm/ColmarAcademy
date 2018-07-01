@@ -4,7 +4,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 100%;
 }
 
 body {
@@ -29,8 +29,8 @@ body {
 
 h1 {
   display: block;
-  font-size: 2.2rem;
-  margin-bottom: 0.67rem;
+  font-size: 2.2em;
+  margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
@@ -39,7 +39,7 @@ h1 {
 
 h2 {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   font-weight: bold;
@@ -48,7 +48,7 @@ h2 {
 
 h3 {
   display: block;
-  font-size: 1.17rem;
+  font-size: 1.17em;
   font-weight: bold;
 }
 
@@ -275,4 +275,25 @@ li {
 .exhibits .item:first-child {
   background-color: lightgrey;
   padding-top: 16px;
+}
+
+/* footer styles */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-top: 1px solid lightgrey;
+  max-width: 1200px;
+}
+
+.copyright p {
+  font-size: 0.8em;
+}
+
+.privacy a {
+  color: grey;
+  font-size: 0.8em;
+  padding-left: 8px;
 }

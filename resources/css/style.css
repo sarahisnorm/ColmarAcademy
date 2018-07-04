@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 
-/* shared styles */
+/* universal styles */
 
 .container {
   max-width: 1200px;
@@ -24,6 +24,15 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
 }
 
 .container:nth-child(2n+0) {
@@ -64,6 +73,18 @@ h4 {
 
 p {
   color: grey;
+}
+
+@media only screen and (max-width: 760px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1em;
+  }
 }
 
 /* header styles */
@@ -131,21 +152,12 @@ header .mobile {
     width: 100%;
   }
 
-  /* header .content {
-    padding: .5rem 0;
-  } */
-
   header .mobile ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
-
-  /* header .mobile li {
-    padding: 0;
-  } */
-
 }
 
 
@@ -201,6 +213,35 @@ header .mobile {
   color: white;
   display: block;
   padding: 8px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .top.container {
+    padding: 0;
+  }
+  .banner {
+    width: 100%;
+    margin: 0;
+  }
+  .banner-info {
+    width: 100%;
+    padding: 32px 0px;
+  }
+  .banner-info h1 {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  .banner-info p {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  br {
+    display: none;
+  }
+  .button {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
 }
 
 /* main info section styles */

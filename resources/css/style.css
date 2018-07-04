@@ -113,6 +113,10 @@ li {
   display: inline-block;
 }
 
+li a:hover {
+  color: #FF8C00;
+}
+
 /* banner styles */
 
 .top.container {
@@ -153,7 +157,13 @@ li {
   display: block;
   border-radius: 4px;
   margin-right: 48px;
+  transition: background-color 250ms ease-in;
 }
+
+.button:hover {
+  background-color: #FF8C00;
+}
+
 
 .button a{
   color: white;
@@ -196,7 +206,7 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 0 16px 16px;
+  padding: 16px 8px 16px 16px;
   max-width: 100%;
   height: auto;
   overflow: hidden;
@@ -230,6 +240,10 @@ li {
   color: cornflowerblue;
 }
 
+.info a:visited {
+  color: #FF8C00;
+}
+
 /* courses section styles */
 
 .container.vertical {
@@ -255,6 +269,13 @@ li {
   flex-direction: column;
   background-color: white;
   margin:16px 16px 32px 16px;
+  transition: background-color 250ms ease-in;
+}
+
+.subject:hover {
+  background-color: #FF8C00;
+  color: white;
+
 }
 
 .subject img {
@@ -273,10 +294,18 @@ li {
   color: grey;
 }
 
+.subject:hover h4{
+  color: white;
+}
+
 .subject p {
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 24px;
+}
+
+.subject:hover p{
+  color: white;
 }
 
 /* thesis exhibit style section  */
@@ -297,6 +326,19 @@ li {
 .exhibits .item:first-child {
   background-color: lightgrey;
   padding-top: 16px;
+}
+
+.thesis {
+  transition: background-color 250ms ease-in;
+}
+
+.exhibits .thesis:hover {
+  background-color: #FF8C00;
+  color: white;
+}
+
+.thesis:hover p {
+  color: white;
 }
 
 /* footer styles */

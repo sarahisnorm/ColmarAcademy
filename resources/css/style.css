@@ -30,9 +30,9 @@ body {
   background-color: lightgrey;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .container {
-    max-width: 600px;
+    max-width: 650px;
     flex-direction: column;
     align-items: center;
     padding: 0;
@@ -79,7 +79,25 @@ p {
   color: grey;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  a {
+    font-size: 0.8em
+  }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 830px) {
   h1 {
     font-size: 1.8em;
   }
@@ -152,7 +170,7 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   header .desktop {
     display: none;
   }
@@ -169,7 +187,6 @@ header .mobile {
     width: 100%;
   }
 }
-
 
 /* banner styles */
 
@@ -225,7 +242,7 @@ header .mobile {
   padding: 8px 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .top.container {
     padding: 0;
     background-color: lightgrey;
@@ -246,9 +263,6 @@ header .mobile {
     margin-right: 16px;
     margin-left: 16px;
   }
-  br {
-    display: none;
-  }
   .button {
     margin-right: 16px;
     margin-left: 16px;
@@ -263,7 +277,7 @@ header .mobile {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .media-text.image {
     display: none;
     margin-right: 0;
@@ -339,7 +353,7 @@ header .mobile {
   color: #FF8C00;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .sidebar {
     width: 100%;
   }
@@ -443,7 +457,7 @@ header .mobile {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .container.vertical {
     width: 100%;
     margin: 0;
@@ -524,7 +538,7 @@ header .mobile {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .exhibits {
     display: block;
     width: 100%;
@@ -576,7 +590,7 @@ footer {
   padding-left: 8px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   footer {
     display: block;
     width: 100%;

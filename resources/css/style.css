@@ -357,11 +357,11 @@ header .mobile {
 }
 
 .info a {
-  color: cornflowerblue;
+  color: #FF8C00;
 }
 
 .info a:visited {
-  color: #FF8C00;
+  color: cornflowerblue;
 }
 
 @media only screen and (max-width: 650px) {

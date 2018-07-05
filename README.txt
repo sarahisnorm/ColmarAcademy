@@ -1,0 +1,1 @@
+This is my capstone project, for the imaginary education provider ‘Colmar Academy’.For my colour scheme I chose grey, light grey and orange. This was to keep a professional look, with a burst of vibrancy. I enjoyed this project and the challenges presented. I did try to condense my CSS where possible, however this kept causing big errors, so I have kept it organised by section.

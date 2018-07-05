@@ -31,7 +31,7 @@ body {
     max-width: 600px;
     flex-direction: column;
     align-items: center;
-    padding: 16px;
+    padding: 0;
   }
 }
 
@@ -84,6 +84,12 @@ p {
   }
   h3 {
     font-size: 1em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  a {
+    font-size: 0.8em
   }
 }
 
@@ -142,7 +148,7 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
   header .desktop {
     display: none;
   }
@@ -252,6 +258,13 @@ header .mobile {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+  .media-text {
+    display: none;
+    margin-right: 0;
+  }
+}
+
 .media-text img {
   max-width: 100%;
   height: auto;
@@ -301,6 +314,10 @@ header .mobile {
   margin-right: 16px;
 }
 
+.item .mobile {
+  display: none;
+}
+
 .info {
   width: 65%;
 }
@@ -315,6 +332,31 @@ header .mobile {
 
 .info a:visited {
   color: #FF8C00;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+  .item {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .item img {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .item .desktop {
+    display: none;
+  }
+  .item .mobile {
+    display: block;
+  }
+  .info {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /* courses section styles */

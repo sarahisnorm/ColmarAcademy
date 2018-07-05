@@ -45,19 +45,19 @@ body {
 
 h1 {
   display: block;
-  font-size: 2.2em;
+  font-size: 2.5em;
   margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h2 {
   display: block;
-  font-size: 1.8em;
+  font-size: 2em;
   margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -127,6 +127,7 @@ header{
   padding-left: 24px;
   padding-right: 24px;
   background-color: white;
+  border-bottom: 1px solid #FF8C00;
 }
 
 span.bold {
@@ -158,8 +159,12 @@ span.light {
 }
 
 li {
-  margin-left: 16px;
+  margin-left: 24px;
   display: inline-block;
+}
+
+.highlight {
+  color: #FF8C00;
 }
 
 li a:hover {
@@ -209,25 +214,29 @@ header .mobile {
 
 .banner-info {
   width: 40%;
+  padding-top: 32px;
+  padding-bottom: 48px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .banner-info h1 {
-  margin-right: 48px;
+  margin-right: 60px;
 }
 
 .banner-info p {
-  margin-right: 48px;
+  margin-right: 60px;
   color: black;
 }
 
 .button {
   max-width: 100%;
-  margin-top: 24px;
+  margin-top: 48px;
   text-align: center;
   background-color: grey;
   display: block;
   border-radius: 4px;
-  margin-right: 48px;
+  margin-right: 60px;
   transition: background-color 250ms ease-in;
 }
 
@@ -240,6 +249,7 @@ header .mobile {
   color: white;
   display: block;
   padding: 8px 0;
+  font-size: 1.2em;
 }
 
 @media only screen and (max-width: 650px) {
@@ -266,6 +276,7 @@ header .mobile {
   .button {
     margin-right: 16px;
     margin-left: 16px;
+    margin-top: 24px;
   }
 }
 

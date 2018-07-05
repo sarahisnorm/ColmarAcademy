@@ -26,6 +26,10 @@ body {
   background-color: white;
 }
 
+.container:nth-child(2n+0) {
+  background-color: lightgrey;
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     max-width: 600px;
@@ -33,10 +37,9 @@ body {
     align-items: center;
     padding: 0;
   }
-}
-
-.container:nth-child(2n+0) {
-  background-color: lightgrey;
+  .container:nth-child(2n+0) {
+    background-color: white;
+  }
 }
 
 h1 {
@@ -224,6 +227,7 @@ header .mobile {
 @media only screen and (max-width: 600px) {
   .top.container {
     padding: 0;
+    background-color: lightgrey;
   }
   .banner {
     width: 100%;
@@ -346,6 +350,7 @@ header .mobile {
   .item img {
     max-width: 100%;
     margin-right: 0;
+    margin-top: 16px;
   }
   .item .desktop {
     display: none;
@@ -356,6 +361,20 @@ header .mobile {
   .info {
     width: 100%;
     padding: 0;
+  }
+  .info h3{
+    padding: 16px 16px 8px 16px;
+  }
+  .info p {
+    padding-left: 16px;
+    padding-bottom: 16px;
+    margin: 0;
+  }
+  .info a {
+    padding-left: 16px;
+  }
+  .main .item:last-child {
+    background-color: white;
   }
 }
 

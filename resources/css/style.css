@@ -505,7 +505,7 @@ header .mobile {
     margin: 8px 16px 0 16px;
   }
 
-  .subject h3:active {
+  .subject h3:hover {
     background-color: #FF8C00;
   }
   .subject h4 {

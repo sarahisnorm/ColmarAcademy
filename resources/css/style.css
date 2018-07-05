@@ -264,7 +264,7 @@ header .mobile {
 }
 
 @media only screen and (max-width: 600px) {
-  .media-text {
+  .media-text.image {
     display: none;
     margin-right: 0;
   }
@@ -347,6 +347,7 @@ header .mobile {
     flex-direction: column;
     width: 100%;
     padding: 0;
+    margin: 0;
   }
   .item img {
     max-width: 100%;
@@ -410,7 +411,6 @@ header .mobile {
 .subject:hover {
   background-color: #FF8C00;
   color: white;
-
 }
 
 .subject img {
@@ -464,6 +464,11 @@ header .mobile {
     margin: 0;
     padding: 0;
   }
+
+  .subject:hover {
+    background-color: white;
+  }
+
   .subject img {
     display: none;
     margin: 0;
@@ -473,6 +478,10 @@ header .mobile {
     background-color: lightgrey;
     padding: 16px;
     margin: 8px 16px 0 16px;
+  }
+
+  .subject h3:active {
+    background-color: #FF8C00;
   }
   .subject h4 {
     display: none;
@@ -515,6 +524,35 @@ header .mobile {
   color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  .exhibits {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .media-text {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+  .video h2{
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .video p {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .thesis {
+    display: none;
+  }
+}
+
 /* footer styles */
 
 footer {
@@ -536,4 +574,21 @@ footer {
   color: grey;
   font-size: 0.8em;
   padding-left: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+.copyright p{
+  padding: 24px 16px;
+}
+
+  .privacy {
+    display: none;
+  }
 }
